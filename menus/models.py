@@ -5,15 +5,7 @@ class Menu(models.Model):
     category = models.CharField(max_length = 255)
     item_name = models.CharField(max_length = 255)
     price = models.FloatField()
-    admin = models.ForeignKey('staff.Administrator', on_delete = models.SET_NULL, null=True)
-
-
-class MenuItem(models.Model):
-    menu = models.ForeignKey(Menu, on_delete = models.CASCADE)
-    item_name = models.CharField(max_length = 255)
-    price = models.FloatField()
-
-
+    staff = models.ForeignKey('staff.Staff', on_delete = models.SET_NULL, null=True)
 
 class Recipe(models.Model):
     chef_name = models.CharField(max_length = 255)

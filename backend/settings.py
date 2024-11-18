@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'menus',
     'orders',
     'staff',
-    'reservation',
-    'tables',
+    'reservations',
     'rest_framework',
     'rest_framework.authtoken',
 ]

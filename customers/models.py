@@ -6,5 +6,5 @@ class Customer(models.Model):
     email = models.EmailField()
     phone_number = models.CharField(max_length=12)
     address = models.TextField()
-    memebership_status = models.CharField(max_length = 50)
+
    
